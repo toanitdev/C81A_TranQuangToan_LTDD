@@ -1,6 +1,9 @@
 # C81A_TranQuangToan_LTDD
 Đồ án môn lập trình di động
 
+TÊN SV : Trần Quang Toàn
+MSSV :   18H1012008
+
 Gồm 6 files :
 1. 1 file apk.
 2. 1 file zip nén toàn bộ mã nguồn ứng dụng.
