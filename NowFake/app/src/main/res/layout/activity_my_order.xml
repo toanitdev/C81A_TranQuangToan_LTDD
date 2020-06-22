@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".features.order_list.MyOrderActivity"
+  android:orientation="vertical"
+  android:background="@color/colorBackground">
+  <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorBackground"
+    android:elevation="8dp">
+    <ImageView
+      android:id="@+id/imgBack"
+      android:layout_width="?attr/actionBarSize"
+      android:layout_height="match_parent"
+      android:src="@drawable/ic_back_red_24dp"/>
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:text="Đơn hàng"
+      android:textSize="18sp"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="?attr/actionBarSize"
+      android:layout_height="match_parent"
+      android:layout_gravity="right"
+      android:padding="8dp">
+      <ImageView
+        android:id="@+id/imgCart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_shopping_cart_red_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+      <TextView
+        android:id="@+id/tvCountCart"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="0"
+        android:textSize="10sp"
+        android:background="@drawable/bg_circle"
+        app:layout_constraintTop_toTopOf="@id/imgCart"
+        app:layout_constraintEnd_toEndOf="@id/imgCart"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+  </FrameLayout>
+  <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rvOrder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+</LinearLayout>

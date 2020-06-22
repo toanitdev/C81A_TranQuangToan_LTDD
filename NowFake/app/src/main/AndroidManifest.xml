@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.toanitdev.nowfake">
+
+  <uses-permission android:name="android.permission.INTERNET" />
+
+  <application
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:roundIcon="@mipmap/ic_launcher_round"
+    android:supportsRtl="true"
+    android:theme="@style/AppTheme">
+    <activity android:name=".features.signup.SignUpActivity"></activity>
+    <activity
+      android:name=".features.my_profile.MyProfileActivity"
+      android:screenOrientation="portrait" />
+    <activity
+      android:name=".features.order_list.MyOrderActivity"
+      android:screenOrientation="portrait" />
+    <activity
+      android:name=".features.review_oder.ReviewActivity"
+      android:screenOrientation="portrait" />
+    <activity
+      android:name=".features.shipping_page.ShippingActivity"
+      android:screenOrientation="portrait" />
+    <activity
+      android:name=".features.splash.SplashActivity"
+      android:screenOrientation="portrait" />
+    <activity
+      android:name=".features.cart.CartActivity"
+      android:screenOrientation="portrait" />
+    <activity
+      android:name=".features.dish_detail.DishDetailActivity"
+      android:screenOrientation="portrait"
+      android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+    <activity
+      android:name=".features.search_page.SearchActivity"
+      android:screenOrientation="portrait" />
+    <activity
+      android:name=".features.landing.LandingActivity"
+      android:screenOrientation="portrait">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity
+      android:name=".features.login.LoginActivity"
+      android:screenOrientation="portrait"
+      android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+  </application>
+
+</manifest>
